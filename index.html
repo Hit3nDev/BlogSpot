@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpot - Your Daily Dose of Inspiration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BlogSpot</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog-list.html">Blog Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="blog vid template.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>Welcome to BlogSpot</h1>
+                <p>Discover stories that inspire, inform, and transform your journey</p>
+                <div class="hero-buttons">
+                    <a href="blog-list.html" class="hero-button primary-button">Get Started</a>
+                    <a href="#featured-posts" class="hero-button secondary-button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-posts" class="featured-posts">
+            <h2>Featured Posts</h2>
+            <div class="post-grid">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Writing inspiration">
+                    <div class="content-wrapper">
+                        <h3>The Art of Writing</h3>
+                        <p>Discover the secrets behind compelling storytelling and effective writing techniques that will transform your content.</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Web development">
+                    <div class="content-wrapper">
+                        <h3>Web Development Trends</h3>
+                        <p>Stay updated with the latest trends and technologies in web development that are shaping the future of the web.</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Digital marketing">
+                    <div class="content-wrapper">
+                        <h3>Digital Marketing Tips</h3>
+                        <p>Learn essential digital marketing strategies to grow your online presence and reach your target audience effectively.</p>
+                        <a href="blog-post.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BlogSpot. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Add scroll event listener for header background
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html> 

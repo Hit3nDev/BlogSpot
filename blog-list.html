@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - BlogSpot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BlogSpot</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog-list.html" class="active">Blog Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-list">
+            <div class="blog-header">
+                <h1>All Blog Posts</h1>
+                <div class="blog-search">
+                    <input type="text" placeholder="Search posts..." id="searchInput">
+                    <div class="filter-tags">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="writing">Writing</button>
+                        <button class="filter-btn" data-category="development">Development</button>
+                        <button class="filter-btn" data-category="marketing">Marketing</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-post">
+                <div class="featured-content">
+                    <span class="featured-label">Featured Post</span>
+                    <h2>The Art of Writing</h2>
+                    <p>Discover the secrets behind compelling storytelling and effective writing techniques that will transform your content.</p>
+                    <div class="post-meta">
+                        <span class="author">
+                            <img src="Hiten.jpg" alt="Hiten Mandhyan" class="author-img">
+                            Hiten Mandhyan
+                        </span>
+                        <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
+                        <span class="category"><i class="fas fa-tag"></i> Writing</span>
+                    </div>
+                    <a href="blog-post.html" class="featured-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="featured-image" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')"></div>
+            </div>
+
+            <div class="posts-container">
+                <article class="blog-post-preview" data-category="development">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Web development">
+                    <div class="post-content">
+                        <div class="post-tags">
+                            <span class="tag">Development</span>
+                            <span class="tag">Tech</span>
+                        </div>
+                        <h2>Web Development Trends</h2>
+                        <p class="post-meta">
+                            <span class="author">
+                                <img src="Hiten.jpg" alt="Hiten Mandhyan" class="author-img">
+                                Hiten Mandhyan
+                            </span>
+                            <span class="date">April 25, 2025</span>
+                            <span class="read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                        </p>
+                        <p>Stay updated with the latest trends and technologies in web development that are shaping the future of the web.</p>
+                        <div class="post-footer">
+                            <a href="blog-post.html" class="read-more">Read More</a>
+                            <div class="social-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <button class="like-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post-preview" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Digital marketing">
+                    <div class="post-content">
+                        <div class="post-tags">
+                            <span class="tag">Marketing</span>
+                            <span class="tag">Strategy</span>
+                        </div>
+                        <h2>Digital Marketing Tips</h2>
+                        <p class="post-meta">
+                            <span class="author">
+                                <img src="Hiten.jpg" alt="Hiten Mandhyan" class="author-img">
+                                Hiten Mandhyan
+                            </span>
+                            <span class="date">April 22, 2025</span>
+                            <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                        </p>
+                        <p>Learn essential digital marketing strategies to grow your online presence and reach your target audience effectively.</p>
+                        <div class="post-footer">
+                            <a href="blog-post.html" class="read-more">Read More</a>
+                            <div class="social-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <button class="like-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest posts and updates delivered straight to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BlogSpot. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
